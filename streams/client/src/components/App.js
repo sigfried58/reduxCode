@@ -10,10 +10,10 @@ import StreamShow from './streams/StreamShow';
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
+      <div className="ui container">
         <BrowserRouter>
           <div>
+            <Header />
             <Route path="/" exact component={StreamList} />
             <Route path="/streams/new" exact component={StreamCreate} />
             <Route path="/streams/edit" exact component={StreamEdit} />
